@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8k)evko$ugpyz2)lx-t5_ilf6v$@8e*=_j3%oja4zkw_v3^o9h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -55,11 +55,6 @@ ROOT_URLCONF = 'mysite.urls'
 import os
 
 TEMPLATES = [
-    {
-        "BACKEND": "django.template.backends.jinja2.Jinja2",
-        "DIRS": [os.path.join(BASE_DIR, "templates")],
-        "APP_DIRS": True,
-    },
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'BACKEND': 'django.template.backends.jinja2.Jinja2',
