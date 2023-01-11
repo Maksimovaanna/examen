@@ -13,34 +13,62 @@
     <thead>
         <tr>
             <th>
-                Test1
+                nomer_reysa
             </th>
             <th>
-                Test2
+                aeroport_vileta
             </th>
             <th>
-                Test3
+                aeroport_prileta
+            </th>
+            <th>
+                vremya_vileta
+            </th>
+            <th>
+                dlitelnost_poleta
             </th>
         </tr>
     </thead>
     <tbody>
     {% for result in Test%}
     <tr>
-        <td>{{result.field1}}</td>
-        <td>{{result.field2}}</td>
-        <td>{{result.field3}}</td>
+        <td>{{result.nomer_reysa}}</td>
+        <td>{{result.aeroport_vileta}}</td>
+        <td>{{result.aeroport_prileta}}</td>
+        <td>{{result.vremya_vileta}}</td>
+        <td>{{result.dlitelnost_poleta}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    <table>
+    <thead>
+        <tr>
+            <th>
+                id_passajira
+            </th>
+            <th>
+                nomer_telefona
+            </th>
+            <th>
+                parol
+            </th>
+            <th>
+                kolichestvo_mil
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for result in ID%}
+    <tr>
+        <td>{{result.id_passajira}}</td>
+        <td>{{result.nomer_telefona}}</td>
+        <td>{{result.parol}}</td>
+        <td>{{result.kolichestvo_mil}}</td>
     </tr>
     {% endfor %}
     </tbody>
 </table>
 <br>
-<h1>Add Function</h1>
-    {% for result in Test %}
-        <p>
-            Sum of {{result.field2}}
-            and {{result.field3}}
-            is {{result.field2|add:result.field3}}
-        </p>
-    {% endfor %}
 </body>
 </html>
